@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "iOS-GPX-Framework"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "The iOS framework for parsing/generating GPX files. (@merlos fork)"
   s.description  = <<-DESC
                    This is a iOS framework for parsing/generating GPX files.
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
   s.ios.deployment_target = '6.0'
+  s.osx.deployment_target = '10.6'
   s.requires_arc = true
 
   s.xcconfig = {
@@ -21,6 +22,5 @@ Pod::Spec.new do |s|
     }
 
   s.source_files = 'GPX'
-  s.ios.framework = 'UIKit'
   s.dependency 'TBXML', '~> 1.5'
 end
